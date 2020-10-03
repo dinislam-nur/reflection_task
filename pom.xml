@@ -10,14 +10,13 @@
 
     <properties>
         <project.build.encoding>UTF-8</project.build.encoding>
-        <junit.jupiter.version>5.6.2</junit.jupiter.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>${junit.jupiter.version}</version>
+            <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
 

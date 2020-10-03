@@ -128,29 +128,23 @@ public class FieldsCleanerImpl implements FieldsCleaner {
         try {
             if (type == int.class) {
                 field.setInt(object, 0);
-            }
-            if (type == long.class) {
+            } else if (type == long.class) {
                 field.setLong(object, 0);
-            }
-            if (type == double.class) {
+            } else if (type == double.class) {
                 field.setDouble(object, 0);
-            }
-            if (type == float.class) {
+            } else if (type == float.class) {
                 field.setFloat(object, 0);
-            }
-            if (type == short.class) {
+            } else if (type == short.class) {
                 field.setShort(object, (short) 0);
-            }
-            if (type == byte.class) {
+            } else if (type == byte.class) {
                 field.setByte(object, (byte) 0);
-            }
-            if (type == char.class) {
+            } else if (type == char.class) {
                 field.setChar(object, (char) 0);
-            }
-            if (type == boolean.class) {
+            } else if (type == boolean.class) {
                 field.setBoolean(object, false);
             }
         } catch (IllegalAccessException e) {
+            System.out.println("Ошибка доступа");
             e.printStackTrace();
         }
     }
